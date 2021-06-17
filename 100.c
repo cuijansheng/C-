@@ -3,11 +3,10 @@
 int main() {
     int n;
     scanf("%d", &n);
-    double a = 0;
+    double ans = 0;
     for (int i = 0; i < 6; i++) {
-        a = a + n;
-        a = a * 1.00417;
+        ans = (ans + n) * 1.00417;
     }
-    printf("$%.2lf\n", a);
+    printf("$%.2lf\n", ans);
     return 0;
 }
